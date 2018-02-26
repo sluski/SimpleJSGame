@@ -100,11 +100,16 @@ function removeAllColors(){
 
 function start_things(){
 	document.getElementById('output').innerHTML = initial[Math.floor(Math.random()*6)];
-	
+	display_instructions();
 }
 
 function responseToLose(level){
 	if(level < 5) document.getElementById('output').innerHTML = bad_score[Math.floor(Math.random()*3)];
 	else if(level <=5 && level > 10) document.getElementById('output').innerHTML = bad_score[Math.floor(Math.random()*2)];
 	else document.getElementById('output').innerHTML = bad_score[Math.floor(Math.random()*2)];
+}
+
+function display_instructions(){
+	var information = "Repeat sequence displayed on screen as short color changes. Good Luck!";
+	window.alert(information);
 }
