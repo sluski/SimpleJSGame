@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+	<title>Simple JS Game</title>
+	<script src="game.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body" onload="start_things()">
+<audio controls loo[ hidden="true" autoplay="true">
+	<source src="music.mp3" type="audio/mp3">
+</audio>
+<div id="container">
+	<div id="box">
+		<a onclick="addNumberToAnswer(1)"><div class="square" id="1"></div></a>
+		<a onclick="addNumberToAnswer(2)"><div class="square" id="2"></div></a>
+		<a onclick="addNumberToAnswer(3)"><div class="square" id="3"></div></a>
+		<div style="clear: both"></div>
+		<a onclick="addNumberToAnswer(4)"><div class="square" id="4"></div></a>
+		<a onclick="addNumberToAnswer(5)"><div class="square" id="5"></div></a>
+		<a onclick="addNumberToAnswer(6)"><div class="square" id="6"></div></a>
+		<div style="clear: both"></div>
+		<a onclick="addNumberToAnswer(7)"><div class="square" id="7"></div></a>
+		<a onclick="addNumberToAnswer(8)"><div class="square" id="8"></div></a>
+		<a onclick="addNumberToAnswer(9)"><div class="square" id="9"></div></a>
+	</div>
+		<div id="output"></div>
+		<input id="start_button" type="button" onclick="start()" value="Play" />
+</div>
+
+<div id="footer">Created by Przemysław Słupski</div>
+<div id="email">przemyslaw.slupski.98@gmail.com</div>
+</body>
+	
+</html>
